@@ -125,6 +125,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/moonlightwarrior"
+    - label: "BaekJoon"
+      icon: "fab fa-fw fa-code"
+      url: "https://www.acmicpc.net/user/davidkim0"
 
 # Site Footer
 footer:
