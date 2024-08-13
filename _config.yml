@@ -128,6 +128,9 @@ author:
     - label: "BaekJoon"
       icon: "fas fa-fw fa-code"
       url: "https://www.acmicpc.net/user/davidkim0"
+    - label: "solved.ac"
+      icon: "fas fa-fw fa-gears"
+      url: "https://solved.ac/profile/davidkim0"
 
 # Site Footer
 footer:
