@@ -17,6 +17,12 @@ use_math: true
 The binomial Theorem is $\{(x+y)^n=\sum\limits_{i=0}^{n}\binom{n}{r}x^{r}y^{n-r}\}$, known to many mathematicians. 
 $y=f(x)$
 
+**The Cauchy-Schwarz Inequality**
+<div style="text-align: center;">
+$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$
+</div>
+
+아 중앙정렬 왜 안되냐
 ## 1. Others
 
 
