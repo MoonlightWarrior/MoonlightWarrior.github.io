@@ -131,9 +131,6 @@ author:
     - label: "solved.ac"
       icon: "fas fa-fw fa-chart-line"
       url: "https://solved.ac/profile/davidkim0"
-    - label: "Bio"
-      icon: "fas fa-fw fa-file"
-      url: "https://moonlightwarrior.notion.site/Kangmin-Kim-c5bcf0bb56274567804431863501f55a"
 
 # Site Footer
 footer:
