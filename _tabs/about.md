@@ -29,7 +29,7 @@ toc: true
 .science { background-color: #007bff; color: white; padding: 5px; margin: 2px; text-align: center; width: 90px; display: block; font-size: 10px; }
 
 /* Computer Science Course Levels */
-.cs1-level { background-color: #C8A2C8; color: white; padding: 5px; margin: 2px; text-align: center; width: 90px; display: block; font-size: 10px; }
+.cs1-level { background-color: #C8A2C8; color: black; padding: 5px; margin: 2px; text-align: center; width: 90px; display: block; font-size: 10px; }
 .cs2-level { background-color: #A64CA6; color: white; padding: 5px; margin: 2px; text-align: center; width: 90px; display: block; font-size: 10px; }
 .cs3-level { background-color: #732673; color: white; padding: 5px; margin: 2px; text-align: center; width: 90px; display: block; font-size: 10px; }
 .cs4-level { background-color: #4B004B; color: white; padding: 5px; margin: 2px; text-align: center; width: 90px; display: block; font-size: 10px; }
@@ -47,7 +47,7 @@ toc: true
   display: block;
   width: 90px;
   padding: 5px;
-  font-size: 10px;
+  font-size: 16px;
   text-align: center;
   margin: 0 auto;           /* Centers block in cell */
   border: 0.5px solid black;  /* Optional: adds thin separation */
@@ -108,8 +108,8 @@ td {
         <div class="cs3-level">CS30200</div>
       </td>
       <td>
-        <div class="cs3-level">CS161(Berkeley)</div>
-        <div class="cs3-level">CS168(Berkeley)</div>
+        <div class="cs3-level">CS161(Cal)</div>
+        <div class="cs3-level">CS168(Cal)</div>
       </td>
       <td>
         <div class="breadth">HSS10099</div>
@@ -136,7 +136,7 @@ td {
 
 .legend-item {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 15px;
   color: white;
   border-radius: 4px;
   text-align: center;
@@ -186,12 +186,12 @@ PS를 꽤나 오래했고, 즐깁니다. 주로 수학/정수론 태그를 파�
 	- 2025 ICPC Korea
 
 
-# 💻 Projects / Development
+# 💻 Projects / Development & Experience
 
 
-| 프로젝트 | 스택 | 설명 |
-|----------|------|------|
-| ??? | ??? | WIP |
+| 프로젝트 | 설명 |
+|----------|------|
+| ??? | WIP |
 
 ## ✉️ Contact
 - **E-mail** : david.dabisu@gmail.com
