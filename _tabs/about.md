@@ -49,14 +49,14 @@ toc: true
   padding: 5px;
   font-size: 16px;
   text-align: center;
-  margin: 0 auto;           /* Centers block in cell */
-  border: 0.5px solid black;  /* Optional: adds thin separation */
-  box-sizing: border-box;   /* Keeps border inside width */
+  margin: 0 auto;
+  border: 0.5px solid black;
+  box-sizing: border-box;
 }
 
 /* Table Layout */
 table {
-  margin: 0 auto; /* Center the table */
+  margin: 0 auto;
   border-collapse: collapse;
 }
 
@@ -64,12 +64,56 @@ th.semester-header {
   font-weight: bold;
   padding: 5px;
   text-align: center;
-  width: 90px; /* Match course box width */
+  width: 90px;
 }
 
 td {
   vertical-align: middle;
   text-align: center;
+}
+
+/* Tooltip styles */
+.tooltip-container {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.tooltip-content {
+  visibility: hidden;
+  position: absolute;
+  z-index: 100;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 135px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s;
+  line-height: 1.4;
+  font-size: 13px;
+  pointer-events: none;
+}
+
+.tooltip-content::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+
+.tooltip-container:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
 }
 </style>
 
@@ -87,38 +131,168 @@ td {
   <tbody>
     <tr>
       <td>
-        <div class="cs1-level">CS10001</div>
-        <div class="cs2-level">CS20004</div>
-        <div class="mas1-level">MAS10001</div>
-        <div class="mas1-level">MAS10002</div>
-        <div class="mas1-level">MAS10009</div>
-        <div class="mas2-level">MAS20001</div>
-        <div class="mas2-level">MAS20050</div>
+        <div class="cs1-level tooltip-container">
+          <span class="course-code">CS10001</span>
+          <span class="tooltip-content">
+            <strong>프로그래밍의 기초</strong>
+          </span>
+        </div>
+        <div class="cs2-level tooltip-container">
+          <span class="course-code">CS20004</span>
+          <span class="tooltip-content">
+            <strong>이산 구조</strong>
+          </span>
+        </div>
+        <div class="mas1-level tooltip-container">
+          <span class="course-code">MAS10001</span>
+          <span class="tooltip-content">
+            <strong>미적분학I</strong>
+          </span>
+        </div>
+        <div class="mas1-level tooltip-container">
+          <span class="course-code">MAS10002</span>
+          <span class="tooltip-content">
+            <strong>미적분학II</strong>
+          </span>
+        </div>
+        <div class="mas1-level tooltip-container">
+          <span class="course-code">MAS10009</span>
+          <span class="tooltip-content">
+            <strong>선형대수학개론</strong>
+          </span>
+        </div>
+        <div class="mas2-level tooltip-container">
+          <span class="course-code">MAS20001</span>
+          <span class="tooltip-content">
+            <strong>응용미분방정식</strong>
+          </span>
+        </div>
+        <div class="mas2-level tooltip-container">
+          <span class="course-code">MAS20050</span>
+          <span class="tooltip-content">
+            <strong>확률과 통계</strong>
+          </span>
+        </div>
       </td>
       <td>
-        <div class="breadth">HSS10074</div>
-        <div class="breadth">HSS10195</div>
-        <div class="breadth">HSS20159</div>
-        <div class="science">CH10002</div>
-        <div class="science">PH10041</div>
-        <div class="science">PH10051</div>
-        <div class="cs2-level">CS20200</div>
-        <div class="cs2-level">CS20300</div>
-        <div class="cs3-level">CS30000</div>
-        <div class="cs3-level">CS30200</div>
+        <div class="breadth tooltip-container">
+          <span class="course-code">HSS10074</span>
+          <span class="tooltip-content">
+            <strong>인성리더십3 강좌</strong>
+          </span>
+        </div>
+        <div class="breadth tooltip-container">
+          <span class="course-code">HSS10195</span>
+          <span class="tooltip-content">
+            <strong>즐거운 대학 생활</strong>
+          </span>
+        </div>
+        <div class="breadth tooltip-container">
+          <span class="course-code">HSS20159</span>
+          <span class="tooltip-content">
+            <strong>경제학개론</strong>
+          </span>
+        </div>
+        <div class="science tooltip-container">
+          <span class="course-code">CH10002</span>
+          <span class="tooltip-content">
+            <strong>일반화학실험I</strong>
+          </span>
+        </div>
+        <div class="science tooltip-container">
+          <span class="course-code">PH10041</span>
+          <span class="tooltip-content">
+            <strong>일반물리학I</strong>
+          </span>
+        </div>
+        <div class="science tooltip-container">
+          <span class="course-code">PH10051</span>
+          <span class="tooltip-content">
+            <strong>일반물리학실험I</strong> 
+          </span>
+        </div>
+        <div class="cs2-level tooltip-container">
+          <span class="course-code">CS20200</span>
+          <span class="tooltip-content">
+            <strong>프로그래밍의 이해</strong> 
+          </span>
+        </div>
+        <div class="cs2-level tooltip-container">
+          <span class="course-code">CS20300</span>
+          <span class="tooltip-content">
+            <strong>시스템 프로그래밍</strong>
+          </span>
+        </div>
+        <div class="cs3-level tooltip-container">
+          <span class="course-code">CS30000</span>
+          <span class="tooltip-content">
+            <strong>알고리즘 개론</strong>
+          </span>
+        </div>
+        <div class="cs3-level tooltip-container">
+          <span class="course-code">CS30200</span>
+          <span class="tooltip-content">
+            <strong>프로그래밍 언어</strong>
+          </span>
+        </div>
       </td>
       <td>
-        <div class="cs3-level">CS161(Cal)</div>
-        <div class="cs3-level">CS168(Cal)</div>
+        <div class="cs3-level tooltip-container">
+          <span class="course-code">CS161(Cal)</span>
+          <span class="tooltip-content">
+            <strong>Computer Security</strong>
+          </span>
+        </div>
+        <div class="cs3-level tooltip-container">
+          <span class="course-code">CS168(Cal)</span>
+          <span class="tooltip-content">
+            <strong>Intro. to the Internet</strong>
+          </span>
+        </div>
       </td>
       <td>
-        <div class="breadth">HSS10099</div>
-        <div class="science">PH10042</div>
-        <div class="science">BS10020</div>
-        <div class="cs2-level">CS20006</div>
-        <div class="cs3-level">CS30202</div>
-        <div class="cs3-level">CS30701</div>
-        <div class="mas3-level">MAS30605</div>
+        <div class="breadth tooltip-container">
+          <span class="course-code">HSS10099</span>
+          <span class="tooltip-content">
+            <strong>신나는 대학 생활</strong>
+          </span>
+        </div>
+        <div class="science tooltip-container">
+          <span class="course-code">PH10042</span>
+          <span class="tooltip-content">
+            <strong>일반물리학II</strong>
+          </span>
+        </div>
+        <div class="science tooltip-container">
+          <span class="course-code">BS10020</span>
+          <span class="tooltip-content">
+            <strong>일반생물학</strong>
+          </span>
+        </div>
+        <div class="cs2-level tooltip-container">
+          <span class="course-code">CS20006</span>
+          <span class="tooltip-content">
+            <strong>데이터구조</strong>
+          </span>
+        </div>
+        <div class="cs3-level tooltip-container">
+          <span class="course-code">CS30202</span>
+          <span class="tooltip-content">
+            <strong>형식언어 및 오토마타</strong>
+          </span>
+        </div>
+        <div class="cs3-level tooltip-container">
+          <span class="course-code">CS30701</span>
+          <span class="tooltip-content">
+            <strong>딥러닝개론</strong> 
+          </span>
+        </div>
+        <div class="mas3-level tooltip-container">
+          <span class="course-code">MAS30605</span>
+          <span class="tooltip-content">
+            <strong>수치해석학개론</strong>
+          </span>
+        </div>
       </td>
       <td></td>
       <td></td>
