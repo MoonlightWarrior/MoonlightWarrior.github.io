@@ -342,6 +342,7 @@ TBA..(이유: Millitary 문제)
 PS를 꽤나 오래했고, 즐깁니다. 주로 수학/정수론 태그를 파는 걸 좋아합니다. 
 
 [![Solved.ac프로필](https://mazassumnida.wtf/api/v2/generate_badge?boj=davidkim0)](https://solved.ac/davidkim0)
+[![mazandi profile](http://mazandi.herokuapp.com/api?handle=davidkim0&theme=dark)](https://solved.ac/davidkim0)
 
 | 플랫폼 | 닉네임 · 티어 / 레이팅 | 비고 |
 |:---:|:---:|:---:|
