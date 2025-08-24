@@ -264,6 +264,12 @@ td {
           </span>
         </div>
         <div class="science tooltip-container">
+          <span class="course-code">CH10101</span>
+          <span class="tooltip-content">
+            <strong>일반화학I</strong>
+          </span>
+        </div>
+        <div class="science tooltip-container">
           <span class="course-code">BS10020</span>
           <span class="tooltip-content">
             <strong>일반생물학</strong>
@@ -281,16 +287,22 @@ td {
             <strong>형식언어 및 오토마타</strong>
           </span>
         </div>
-        <div class="cs3-level tooltip-container">
-          <span class="course-code">CS30701</span>
+        <div class="mas3-level tooltip-container">
+          <span class="course-code">MAS30055</span>
           <span class="tooltip-content">
-            <strong>딥러닝개론</strong> 
+            <strong>수리통계학</strong>
           </span>
         </div>
         <div class="mas3-level tooltip-container">
           <span class="course-code">MAS30605</span>
           <span class="tooltip-content">
             <strong>수치해석학개론</strong>
+          </span>
+        </div>
+        <div class="mas4-level tooltip-container">
+          <span class="course-code">MAS40073</span>
+          <span class="tooltip-content">
+            <strong>수학과인공지능개론</strong>
           </span>
         </div>
       </td>
@@ -356,7 +368,6 @@ PS를 꽤나 오래했고, 즐깁니다. 주로 수학/정수론 태그를 파�
 	- 2025 대학수학경시대회
 - Competitive Programming
 	- 2025 LGCPC
-	- 2025 NYPC - Code Battle
 	- 2025 ICPC Korea
 
 
