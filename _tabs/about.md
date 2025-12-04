@@ -362,14 +362,12 @@ PS를 꽤나 오래했고, 즐깁니다. 주로 수학/정수론 태그를 파�
 | **블로그** | [Math/CS](https://moonlightwarrior.github.io/) 운영, 업무용 개설 예정 | |
 
 # 🏆 Awards & Achievements
-코딩 쪽 상은 아직은 없어요..ㅠㅠ
-하지만, 현재 노리고 있는 대회들은 있습니다. 
-- Mathematics 
-	- 2025 대학수학경시대회
-- Competitive Programming
-	- 2025 LGCPC
-	- 2025 ICPC Korea
-
+## 2025
+| 대회 | 순위/등급 |
+|2025 Korea ICPC|Regionals, 47등|
+|2025 대학수학경시대회|Gold Medal|
+## 2026
+TBD
 
 # 💻 Projects / Development & Experience
 
