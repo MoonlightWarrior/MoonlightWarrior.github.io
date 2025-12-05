@@ -363,10 +363,13 @@ PS를 꽤나 오래했고, 즐깁니다. 주로 수학/정수론 태그를 파�
 
 # 🏆 Awards & Achievements
 ## 2025
+
 | 대회 | 순위/등급 |
 |:---:|:---:|
-|2025 Korea ICPC | Regionals, 47등|
-|2025 대학수학경시대회 | Gold Medal|
+| 2025 Korea ICPC Regionals 예선 | 24th place |
+| 2025 Korea ICPC Regionals 본선 | 47th place |
+| 2025 대학수학경시대회 | **<span style="color:#DAA520;">Gold Medal</span>** |
+
 ## 2026
 TBD
 
