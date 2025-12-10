@@ -29,21 +29,122 @@ toc: true
 .science { background-color: #007bff; color: white; padding: 5px; margin: 2px; text-align: center; width: 90px; display: block; font-size: 10px; }
 
 /* Computer Science Course Levels */
-.cs1-level { background-color: #C8A2C8; color: black; padding: 5px; margin: 2px; text-align: center; width: 90px; display: block; font-size: 10px; }
-.cs2-level { background-color: #A64CA6; color: white; padding: 5px; margin: 2px; text-align: center; width: 90px; display: block; font-size: 10px; }
-.cs3-level { background-color: #732673; color: white; padding: 5px; margin: 2px; text-align: center; width: 90px; display: block; font-size: 10px; }
-.cs4-level { background-color: #4B004B; color: white; padding: 5px; margin: 2px; text-align: center; width: 90px; display: block; font-size: 10px; }
+.cs1-level { 
+  background-color: #C8A2C8; 
+  color: black; 
+  padding: 5px; 
+  margin: 2px; 
+  text-align: center; 
+  width: 90px; 
+  display: block; 
+  font-size: 10px; 
+}
+
+.cs2-level { 
+  background-color: #A64CA6; 
+  color: white; 
+  padding: 5px; 
+  margin: 2px; 
+  text-align: center; 
+  width: 90px; 
+  display: block; 
+  font-size: 10px; 
+}
+
+.cs3-level { 
+  background-color: #732673; 
+  color: white; 
+  padding: 5px; 
+  margin: 2px; 
+  text-align: center; 
+  width: 90px; 
+  display: block; 
+  font-size: 10px; 
+}
+
+.cs4-level { 
+  background-color: #4B004B; 
+  color: white; 
+  padding: 5px; 
+  margin: 2px; 
+  text-align: center; 
+  width: 90px; 
+  display: block; 
+  font-size: 10px; 
+}
+
+.cs5-level { 
+  background-color: #2A002A;  /* deeper, nearly-black purple */
+  color: white; 
+  padding: 5px; 
+  margin: 2px; 
+  text-align: center; 
+  width: 90px; 
+  display: block; 
+  font-size: 10px; 
+}
 
 /* Mathematics Course Levels */
-.mas1-level { background-color: #ADD8E6; color: black; padding: 5px; margin: 2px; text-align: center; width: 90px; display: block; font-size: 10px; }
-.mas2-level { background-color: #4682B4; color: white; padding: 5px; margin: 2px; text-align: center; width: 90px; display: block; font-size: 10px; }
-.mas3-level { background-color: #003366; color: white; padding: 5px; margin: 2px; text-align: center; width: 90px; display: block; font-size: 10px; }
-.mas4-level { background-color: #001F3F; color: white; padding: 5px; margin: 2px; text-align: center; width: 90px; display: block; font-size: 10px; }
+.mas1-level {
+  background-color: #B7D7F2; /* lightest blue */
+  color: black;
+  padding: 5px;
+  margin: 2px;
+  text-align: center;
+  width: 90px;
+  display: block;
+  font-size: 10px;
+}
+
+.mas2-level {
+  background-color: #659EC7; /* soft medium blue */
+  color: white;
+  padding: 5px;
+  margin: 2px;
+  text-align: center;
+  width: 90px;
+  display: block;
+  font-size: 10px;
+}
+
+.mas3-level {
+  background-color: #2B5C8A; /* deep steel blue */
+  color: white;
+  padding: 5px;
+  margin: 2px;
+  text-align: center;
+  width: 90px;
+  display: block;
+  font-size: 10px;
+}
+
+.mas4-level {
+  background-color: #0B2E4A; /* dark navy */
+  color: white;
+  padding: 5px;
+  margin: 2px;
+  text-align: center;
+  width: 90px;
+  display: block;
+  font-size: 10px;
+}
+
+.mas5-level {
+  background-color: #000B1A; /* near-black blue */
+  color: white;
+  padding: 5px;
+  margin: 2px;
+  text-align: center;
+  width: 90px;
+  display: block;
+  font-size: 10px;
+}
+
 /* Center all course boxes */
 /* Center and stack course boxes tightly */
 .breadth, .business, .science,
 .cs1-level, .cs2-level, .cs3-level, .cs4-level,
-.mas1-level, .mas2-level, .mas3-level, .mas4-level {
+.mas1-level, .mas2-level, .mas3-level, .mas4-level, .mas5-level {
   display: block;
   width: 90px;
   padding: 5px;
@@ -313,10 +414,16 @@ td {
             <strong>전산기조직</strong>
           </span>
         </div>
-        <div class="mas2-level tooltip-container">
-          <span class="course-code">MAS20041</span>
+        <div class="cs3-level tooltip-container">
+          <span class="course-code">CS30707</span>
           <span class="tooltip-content">
-            <strong>해석학 I</strong>
+            <strong>강화학습개론</strong>
+          </span>
+        </div>
+        <div class="mas3-level tooltip-container">
+          <span class="course-code">MAS30031</span>
+          <span class="tooltip-content">
+            <strong>현대대수학 I</strong>
           </span>
         </div>
         <div class="mas3-level tooltip-container">
@@ -326,6 +433,12 @@ td {
           </span>
         </div>
         <div class="mas4-level tooltip-container">
+          <span class="course-code">MAS40040</span>
+          <span class="tooltip-content">
+            <strong>편미분방정식개론</strong>
+          </span>
+        </div>
+        <div class="mas5-level tooltip-container">
           <span class="course-code">MAS50055</span>
           <span class="tooltip-content">
             <strong>고급통계학</strong>
@@ -383,8 +496,8 @@ PS를 꽤나 오래했고, 즐깁니다. 주로 수학/정수론 태그를 파�
 
 | 플랫폼 | 닉네임 · 티어 / 레이팅 | 비고 |
 |:---:|:---:|:---:|
-| **Baekjoon** | `davidkim0` • Diamond Ⅱ • **1200+** solved | 2024/2025 KSAAC Winter Contest 검수·출제 |
-| **Codeforces** | Specialist • 1525 (max) / 1525 (now) | |
+| **Baekjoon** | `davidkim0` • Diamond Ⅱ • **1300+** solved | 2024/2025 KSAAC Winter Contest 검수·출제 |
+| **Codeforces** | Specialist • 1598 (max) / 1535 (now) | |
 | **블로그** | [Math/CS](https://moonlightwarrior.github.io/) 운영, 업무용 개설 예정 | |
 
 # 🏆 Awards & Achievements
@@ -394,10 +507,31 @@ PS를 꽤나 오래했고, 즐깁니다. 주로 수학/정수론 태그를 파�
 |:---:|:---:|
 | 2025 Korea ICPC Regionals 예선 | 24th place |
 | 2025 Korea ICPC Regionals 본선 | 47th place |
-| 2025 대학수학경시대회 | **<span style="color:#DAA520;">Gold Medal</span>** |
+| 2025 대학수학경시대회 | <span class="gold-shine">Gold Medal</span> |
+
+<style>
+.gold-shine {
+  font-weight: bold;
+  background: linear-gradient(90deg, #b8860b, #ffd700, #b8860b);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shine 2.2s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+</style>
+
+
 
 ## 2026
-TBD
+TBD(Estimation: UCPC, ICPC.. etc.)
 
 # 💻 Projects / Development & Experience
 
