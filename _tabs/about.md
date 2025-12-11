@@ -421,7 +421,7 @@ td {
           </span>
         </div>
         <div class="mas3-level tooltip-container">
-          <span class="course-code">MAS30031</span>
+          <span class="course-code">MAS30011</span>
           <span class="tooltip-content">
             <strong>현대대수학 I</strong>
           </span>
