@@ -8,15 +8,14 @@ toc: true
 안녕하세요, 월광입니다. 
 # 👋 Introductions
 - 온라인 상에서 대부분 이 닉네임으로 사용 중입니다. Moonlight_으로 활동 중입니다. (혹은 다른 닉네임이였다 전환예정입니다)
-- 2025년에 카이스트에 새내기과정학부로 입학해 공부 중입니다.
-	- 전산/수학 복전입니다. 
+- 2026년 기준 KAIST에서 전산학과/수학과 복수전공을 하고 있습니다. 
 	- KSA(카이스트 부설 한국과학영재학교)를 졸업하였습니다. 
 - 뭐든지 들여다보는 걸 좋아합니다. 우선은 컴퓨터과학에서 다양한 분야를 접해보고 있는데(recent. 보안, 인터넷) 이를 통해 전산에 대한 전반적 지식을 익히고, 차차 관심분야가 좁혀지면 그쪽으로 돌진해볼 계획입니다. 인공지능쪽을 파보곤 싶은데 실력이 아직은 부족한 것 같습니다. PS도 파보곤 있습니다. 
 	- 수학도 많이 재밌어합니다. 한 번 복소찍먹을 고등학교 때 해봤는데 굉장히 재밌던 기억이 었습니다. 
 - 블로그에는 주로 수학/정보 관련 주제로 포스트가 올라갈 것 같긴 한데, 가끔 원하면 다른 주제로도 올릴 수 있을 것 같습니다. 
 - JPOP쪽 장르를 많이 파먹습니다. 웬만해서는 피아노가 베이스인 곡을 좋아하긴 합니다. 동인음악도 파긴 하고(여기도 pianocore이 좋음), 가끔은 다른 곡들도 취향에 있는 것 같습니다. 
 	- **Hoyomix**를 숭배하고 있습니다. 그저 갓. 
-- 위에 껄 보면 알겠지만 사실 아직은 하는 게임이 원신/붕스 정도입니다. 더 재밌는 게 나오면 할 수도 있긴 한데, 스토리와 음악에 목매는 사람이라..딴겜으로 옮겨갈 가능성이 너무 적음. (UPD: 3.7 기준 붕스는 아쉽고, 6.2 기준 원신은 상당히 잘하고 있습니다)
+- 위에 껄 보면 알겠지만 사실 아직은 하는 게임이 원신/붕스 정도입니다. 더 재밌는 게 나오면 할 수도 있긴 한데, 스토리와 음악에 목매는 사람이라..딴겜으로 옮겨갈 가능성이 너무 적음. 이였는데 이환은 해 볼 것 같습니다. (UPD: 3.7 기준 붕스는 아쉽고, 6.2 기준 원신은 상당히 잘하고 있습니다)
 - 심심할 때, 뭔가를 기록하려는 용도로 만들었습니다. 예전에 만든 버전이 있긴 한데 미적으로 좀 별로인 거 같아서(minimal-mistakes) 다시 새로운 디자인으로 팠습니다.  훨씬 깨끗해서 마음에 듭니다. 
 
 # 🎓 Academics
@@ -408,6 +407,12 @@ td {
         </div>
       </td>
       <td>
+        <div class="breadth tooltip-container">
+          <span class="course-code">HSS20010</span>
+          <span class="tooltip-content">
+            <strong>언어, 마음, 뇌</strong>
+          </span>
+        </div>
         <div class="cs3-level tooltip-container">
           <span class="course-code">CS30101</span>
           <span class="tooltip-content">
@@ -415,27 +420,21 @@ td {
           </span>
         </div>
         <div class="cs3-level tooltip-container">
+          <span class="course-code">CS30600</span>
+          <span class="tooltip-content">
+            <strong>데이타베이스 개론</strong>
+          </span>
+        </div>
+        <div class="cs3-level tooltip-container">
+          <span class="course-code">CS30706</span>
+          <span class="tooltip-content">
+            <strong>기계학습</strong>
+          </span>
+        </div>
+        <div class="cs3-level tooltip-container">
           <span class="course-code">CS30707</span>
           <span class="tooltip-content">
             <strong>강화학습개론</strong>
-          </span>
-        </div>
-        <div class="mas3-level tooltip-container">
-          <span class="course-code">MAS30011</span>
-          <span class="tooltip-content">
-            <strong>현대대수학 I</strong>
-          </span>
-        </div>
-        <div class="mas3-level tooltip-container">
-          <span class="course-code">MAS30031</span>
-          <span class="tooltip-content">
-            <strong>위상수학</strong>
-          </span>
-        </div>
-        <div class="mas4-level tooltip-container">
-          <span class="course-code">MAS40040</span>
-          <span class="tooltip-content">
-            <strong>편미분방정식개론</strong>
           </span>
         </div>
         <div class="mas5-level tooltip-container">
@@ -494,11 +493,207 @@ PS를 꽤나 오래했고, 즐깁니다. 주로 수학/정수론 태그를 파�
 
 [![Solved.ac프로필](https://mazassumnida.wtf/api/v2/generate_badge?boj=davidkim0)](https://solved.ac/davidkim0)
 
-| 플랫폼 | 닉네임 · 티어 / 레이팅 | 비고 |
-|:---:|:---:|:---:|
-| **Baekjoon** | `davidkim0` • Diamond Ⅱ • **1300+** solved | 2024/2025 KSAAC Winter Contest 검수·출제 |
-| **Codeforces** | Specialist • 1598 (max) / 1535 (now) | |
-| **블로그** | [Math/CS](https://moonlightwarrior.github.io/) 운영, 업무용 개설 예정 | |
+<table style="width: 100%; min-width: 680px;">
+  <thead>
+    <tr>
+        <th style="text-align: center;"><strong>플랫폼</strong></th>
+        <th style="text-align: center;"><strong>티어 / 레이팅</strong></th>
+        <th style="text-align: center;"><strong>비고</strong></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+      <td><strong>Baekjoon</strong></td>
+      <td><strong><span id="baekjoon-tier">Loading...</span></strong> • <span id="baekjoon-rating">Loading...</span> • <span id="baekjoon-solved">Loading...</span> Solved</td>
+      <td>2024/2025 KSAAC 검수·출제</td>
+    </tr>
+    <tr>
+      <td><strong>Codeforces</strong></td>
+      <td><strong><span id="codeforces-tier" style="text-transform: captialize;">Loading...</span></strong> • <span id="codeforces-rating">Loading...</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>AtCoder</strong></td>
+      <td><strong><span id="atcoder-tier">Loading...</span></strong> • <span id="atcoder-rating">Loading...</span> </td>
+      <td></td>
+    </tr>
+</tbody>
+</table>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const baekjoonHandle = 'davidkim0'; // Replace with actual handle
+    const codeforcesHandle = 'MoonlightWarrior'; // Replace with actual handle
+    const atcoderHandle = 'Moonlight_'; // Replace with actual handle
+
+    // Color definitions for each platform
+    const solvedAcColors = {
+        1: '#ad5600', 2: '#ad5600', 3: '#ad5600', 4: '#ad5600', 5: '#ad5600', // Bronze
+        6: '#435f7a', 7: '#435f7a', 8: '#435f7a', 9: '#435f7a', 10: '#435f7a', // Silver
+        11: '#ec9a00', 12: '#ec9a00', 13: '#ec9a00', 14: '#ec9a00', 15: '#ec9a00', // Gold
+        16: '#27e2a4', 17: '#27e2a4', 18: '#27e2a4', 19: '#27e2a4', 20: '#27e2a4', // Platinum
+        21: '#00b4fc', 22: '#00b4fc', 23: '#00b4fc', 24: '#00b4fc', 25: '#00b4fc', // Diamond
+        26: '#ff0062', 27: '#ff0062', 28: '#ff0062', 29: '#ff0062', 30: '#ff0062'  // Ruby
+    };
+
+    const codeforcesColors = {
+        'newbie': '#808080',
+        'pupil': '#008000',
+        'specialist': '#03a89e',
+        'expert': '#0000ff',
+        'candidate master': '#aa00aa',
+        'master': '#ff8c00',
+        'international master': '#ff8c00',
+        'grandmaster': '#ff0000',
+        'international grandmaster': '#ff0000',
+        'legendary grandmaster': '#ff0000'
+    };
+
+    const atcoderColors = {
+        '8 kyu': '#808080', '7 kyu': '#804000', '6 kyu': '#008000', '5 kyu': '#00c0c0',
+        '4 kyu': '#00c0c0', '3 kyu': '#c0c000', '2 kyu': '#ff8000', '1 kyu': '#ff0000',
+        'dan': '#ff0000'
+    };
+
+    // Helper function to apply color
+    function applyColor(elementId, color) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.style.color = color;
+            element.style.fontWeight = 'bold';
+        }
+    }
+
+    // Fetch Solved.ac (Baekjoon) data using Vercel proxy
+    fetch(`https://api-py.vercel.app/?r=https://solved.ac/api/v3/user/show?handle=${baekjoonHandle}`)
+        .then(response => response.json())
+        .then(data => {
+            if (data && data.tier && data.solvedCount) {
+                // Map tier number to name (simplified for example)
+                const tierNames = {
+                    1: 'Bronze V', 2: 'Bronze IV', 3: 'Bronze III', 4: 'Bronze II', 5: 'Bronze I',
+                    6: 'Silver V', 7: 'Silver IV', 8: 'Silver III', 9: 'Silver II', 10: 'Silver I',
+                    11: 'Gold V', 12: 'Gold IV', 13: 'Gold III', 14: 'Gold II', 15: 'Gold I',
+                    16: 'Platinum V', 17: 'Platinum IV', 18: 'Platinum III', 19: 'Platinum II', 20: 'Platinum I',
+                    21: 'Diamond V', 22: 'Diamond IV', 23: 'Diamond III', 24: 'Diamond II', 25: 'Diamond I',
+                    26: 'Ruby V', 27: 'Ruby IV', 28: 'Ruby III', 29: 'Ruby II', 30: 'Ruby I'
+                };
+                const tierName = tierNames[data.tier] || 'Unknown';
+                const tierElement = document.getElementById('baekjoon-tier');
+
+                document.getElementById('baekjoon-tier').textContent = tierName;
+                document.getElementById('baekjoon-rating').textContent = `${data.rating || 0}`;
+                document.getElementById('baekjoon-solved').textContent = data.solvedCount;
+                
+                // Apply color based on tier
+                const color = solvedAcColors[data.tier] || '#000000';
+                applyColor('baekjoon-tier', color);
+                applyColor('baekjoon-handle', color);
+            } else {
+                document.getElementById('baekjoon-tier').textContent = 'N/A';
+                document.getElementById('baekjoon-rating').textContent = 'N/A';
+                document.getElementById('baekjoon-solved').textContent = 'N/A';
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching Solved.ac data:', error);
+            document.getElementById('baekjoon-tier').textContent = 'Error';
+            document.getElementById('baekjoon-rating').textContent = 'Error';
+            document.getElementById('baekjoon-solved').textContent = 'Error';
+        });
+
+    // Fetch Codeforces data using Vercel proxy
+    fetch(`https://api-py.vercel.app/?r=https://codeforces.com/api/user.info?handles=${codeforcesHandle}`)
+        .then(response => response.json())
+        .then(data => {
+            if (data && data.result && data.result.length > 0) {
+                const user = data.result[0];
+                const rank = user.rank || 'N/A';
+                rank.href = `https://codeforces.com/profile/MoonlightWarrior`;
+                document.getElementById('codeforces-tier').textContent = rank;
+                document.getElementById('codeforces-rating').textContent = `${user.maxRating || 'N/A'} (max) / ${user.rating || 'N/A'} (now)`;
+                
+                // Apply color based on rank
+                const color = codeforcesColors[rank.toLowerCase()] || '#000000';
+                
+                applyColor('codeforces-tier', color);
+                applyColor('codeforces-handle', color);
+            } else {
+                document.getElementById('codeforces-tier').textContent = 'N/A';
+                document.getElementById('codeforces-rating').textContent = 'N/A';
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching Codeforces data:', error);
+            document.getElementById('codeforces-tier').textContent = 'Error';
+            document.getElementById('codeforces-rating').textContent = 'Error';
+        });
+
+    // AtCoder - Set fixed values as requested
+    // AtCoder 데이터 가져오기 (배열 형태)
+fetch(`https://api-py.vercel.app/?r=https://atcoder.jp/users/${atcoderHandle}/history/json`)
+    .then(response => response.json())
+    .then(data => {
+        // data 자체가 배열인지 확인
+        if (Array.isArray(data) && data.length > 0) {
+            // 1. 현재 레이팅: 가장 마지막 대회 기록의 NewRating
+            const currentRating = data[data.length - 1].NewRating;
+            
+            // 2. 최대 레이팅: 전체 기록 중 NewRating의 최댓값 계산
+            const maxRating = Math.max(...data.map(contest => contest.NewRating));
+            
+            // 3. 점수에 따른 티어 이름 및 색상 계산 함수 호출
+            const { tierName, color } = getAtCoderTierInfo(currentRating);
+
+            // 4. DOM 업데이트
+            const tierElement = document.getElementById('atcoder-tier');
+            const ratingElement = document.getElementById('atcoder-rating');
+
+            if (tierElement) tierElement.textContent = tierName;
+            if (ratingElement) ratingElement.textContent = `${maxRating} (max) / ${currentRating} (now)`;
+            
+            // 5. 색상 적용
+            tierElement.href = `https://atcoder.jp/users/Moonlight_`;
+            applyColor('atcoder-tier', color);
+            applyColor('atcoder-handle', color);
+
+        } else {
+            // 기록이 없는 경우 (Unrated)
+            handleAtCoderError('Unrated', 'N/A');
+        }
+    })
+    .catch(error => {
+        console.error('Error fetching atcoder data:', error);
+        handleAtCoderError('Error', 'Error');
+    });
+
+// [헬퍼 함수 1] AtCoder 레이팅으로 티어 이름과 색상 반환
+function getAtCoderTierInfo(rating) {
+    if (rating < 400) return { tierName: 'Gray', color: '#808080' };
+    if (rating < 800) return { tierName: 'Brown', color: '#804000' };
+    if (rating < 1200) return { tierName: 'Green', color: '#008000' };
+    if (rating < 1600) return { tierName: 'Cyan', color: '#00C0C0' };
+    if (rating < 2000) return { tierName: 'Blue', color: '#0000FF' };
+    if (rating < 2400) return { tierName: 'Yellow', color: '#C0C000' };
+    if (rating < 2800) return { tierName: 'Orange', color: '#FF8000' };
+    return { tierName: 'Red', color: '#FF0000' };
+}
+
+// [헬퍼 함수 2] 에러나 데이터 없을 때 처리
+function handleAtCoderError(tierText, ratingText) {
+    const t = document.getElementById('atcoder-tier');
+    const r = document.getElementById('atcoder-rating');
+    if (t) { t.textContent = tierText; t.style.color = 'black'; }
+    if (r) r.textContent = ratingText;
+}
+
+// [기존 함수 활용] 색상 적용
+function applyColor(elementId, color) {
+    const el = document.getElementById(elementId);
+    if (el) el.style.color = color;
+}
+});
+</script>
 
 # 🏆 Awards & Achievements
 ## 2025
@@ -535,13 +730,9 @@ TBD(Estimation: UCPC, ICPC.. etc.)
 
 # 💻 Projects / Development & Experience
 
-
-| 프로젝트 | 설명 |
-|:----------:|:------:|
-| ??? | WIP |
+Nothing currently in Progress..
 
 ## ✉️ Contact
 - **E-mail** : david.dabisu@gmail.com
 - **Blog**   : <https://moonlightwarrior.github.io/>  
 - **GitHub** : [@moonlightwarrior](https://github.com/moonlightwarrior)
-
