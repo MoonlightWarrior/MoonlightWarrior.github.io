@@ -217,6 +217,7 @@ td {
 }
 </style>
 
+<div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
 <table>
   <thead>
     <tr>
@@ -449,6 +450,7 @@ td {
     </tr>
   </tbody>
 </table>
+</div>
 
 <style>
 .legend {
@@ -495,6 +497,7 @@ PS를 꽤나 오래했고, 즐깁니다. 주로 수학/정수론 태그를 파�
 
 [![Solved.ac프로필](https://mazassumnida.wtf/api/v2/generate_badge?boj=davidkim0)](https://solved.ac/davidkim0)
 
+<div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
 <table style="width: 100%; min-width: 680px;">
   <thead>
     <tr>
@@ -521,6 +524,7 @@ PS를 꽤나 오래했고, 즐깁니다. 주로 수학/정수론 태그를 파�
     </tr>
 </tbody>
 </table>
+</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
