@@ -6,6 +6,9 @@ permalink: /:title
 categories: [Roadmaps]
 tag: ['2025']
 description: 올해는 무슨 포스트가 기다리고 있을까요?
+image:
+  path: /images/2025-08-05-roadmap_post/skyjpg.jpg
+  alt: Roadmap for 2025 - Posts
 comments: true
 math: true
 published: true
