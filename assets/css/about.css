@@ -1,0 +1,128 @@
+/* About page styles — course grid, tooltips, legend, award shine.
+   Loaded only by _tabs/about.md. */
+
+/* ===== Academics: course color levels ===== */
+.breadth   { background-color: #2e8b57; color: #fff; }
+.business  { background-color: #8b4513; color: #fff; }
+.science   { background-color: #007bff; color: #fff; }
+.cs1-level { background-color: #C8A2C8; color: #000; }
+.cs2-level { background-color: #A64CA6; color: #fff; }
+.cs3-level { background-color: #732673; color: #fff; }
+.cs4-level { background-color: #4B004B; color: #fff; }
+.cs5-level { background-color: #2A002A; color: #fff; }
+.mas1-level { background-color: #B7D7F2; color: #000; }
+.mas2-level { background-color: #659EC7; color: #fff; }
+.mas3-level { background-color: #2B5C8A; color: #fff; }
+.mas4-level { background-color: #0B2E4A; color: #fff; }
+.mas5-level { background-color: #000B1A; color: #fff; }
+
+.breadth, .business, .science,
+.cs1-level, .cs2-level, .cs3-level, .cs4-level, .cs5-level,
+.mas1-level, .mas2-level, .mas3-level, .mas4-level, .mas5-level {
+  display: block;
+  width: 90px;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  border: 0.5px solid #000;
+  box-sizing: border-box;
+}
+
+/* ===== Table layout ===== */
+.course-table { margin: 0 auto; border-collapse: collapse; }
+.course-table th.semester-header { font-weight: bold; padding: 5px; text-align: center; width: 90px; }
+.course-table td { vertical-align: top; text-align: center; }
+
+/* Extra top room so desktop hover tooltips aren't clipped. */
+.course-table-wrap { padding-top: 44px; }
+
+/* ===== Tooltips (desktop: reveal on hover / keyboard focus / tap) ===== */
+.tooltip-container { position: relative; display: block; text-align: center; cursor: default; outline: none; }
+.tooltip-container:focus-visible { outline: 2px solid #1e90ff; outline-offset: 2px; border-radius: 2px; }
+
+.tooltip-content {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: 100;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 135px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  transition: opacity 0.3s;
+  line-height: 1.4;
+  font-size: 13px;
+  pointer-events: none;
+}
+
+.tooltip-content::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+
+.tooltip-container:hover .tooltip-content,
+.tooltip-container:focus .tooltip-content,
+.tooltip-container:focus-within .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ===== Mobile: scroll horizontally and show names inline (no fragile hover) ===== */
+@media (max-width: 820px) {
+  .course-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 8px;
+  }
+  .tooltip-content {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    width: auto;
+    background: transparent;
+    color: inherit;
+    box-shadow: none;
+    padding: 2px 0 0;
+    font-size: 10px;
+    line-height: 1.2;
+  }
+  .tooltip-content strong { font-weight: normal; }
+  .tooltip-content::after { display: none; }
+}
+
+/* ===== Legend ===== */
+.legend { display: flex; gap: 10px; justify-content: center; margin-top: 15px; flex-wrap: wrap; }
+.legend-item { padding: 5px 10px; font-size: 15px; color: #fff; border-radius: 4px; text-align: center; font-weight: bold; }
+.legend-cs { background-color: #732673; }
+.legend-mas { background-color: #003366; }
+.legend-breadth { background-color: #2e8b57; }
+.legend-science { background-color: #007bff; }
+
+/* ===== Awards: shimmering gold medal ===== */
+.gold-shine {
+  font-weight: bold;
+  background: linear-gradient(90deg, #b8860b, #ffd700, #b8860b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 2.2s linear infinite;
+}
+
+@keyframes shine {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
