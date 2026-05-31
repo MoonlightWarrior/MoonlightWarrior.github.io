@@ -426,10 +426,10 @@ td {
             <strong>기계학습</strong>
           </span>
         </div>
-        <div class="mas3-level tooltip-container">
-          <span class="course-code">MAS30011</span>
+        <div class="cs3-level tooltip-container">
+          <span class="course-code">CS30707</span>
           <span class="tooltip-content">
-            <strong>현대대수학I</strong>
+            <strong>강화학습 개론</strong>
           </span>
         </div>
         <div class="mas3-level tooltip-container">
