@@ -7,7 +7,29 @@ toc: true
 
 <link rel="stylesheet" href="{{ '/assets/css/about.css' | relative_url }}">
 
-안녕하세요, 월광입니다. 
+<!-- ===== Hero ===== -->
+<section class="cv-hero">
+  <img class="cv-hero-avatar" src="{{ site.avatar | relative_url }}" alt="Moonlight_ avatar">
+  <div class="cv-hero-body">
+    <p class="cv-hero-name">Moonlight_</p>
+    <p class="cv-hero-tagline">Looking across the shorelines</p>
+    <div class="cv-hero-chips">
+      <span class="cv-chip"><i class="fas fa-graduation-cap"></i>KAIST CS &amp; Math</span>
+      <span class="cv-chip"><i class="fas fa-code"></i>PS / CP</span>
+      <span class="cv-chip"><i class="fas fa-brain"></i>XAI · NLP · AI Theory</span>
+      <span class="cv-chip"><i class="fas fa-music"></i>JPOP · HOYO-MiX</span>
+    </div>
+    <div class="cv-links">
+      <a class="cv-btn cv-btn-primary" href="https://github.com/moonlightwarrior" target="_blank" rel="noopener"><i class="fab fa-github"></i>GitHub</a>
+      <a class="cv-btn" href="mailto:david.dabisu@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+      <a class="cv-btn" href="https://solved.ac/davidkim0" target="_blank" rel="noopener"><i class="fas fa-square-root-variable"></i>solved.ac</a>
+      <a class="cv-btn" href="https://codeforces.com/profile/MoonlightWarrior" target="_blank" rel="noopener"><i class="fas fa-chart-line"></i>Codeforces</a>
+      <a class="cv-btn" href="https://atcoder.jp/users/Moonlight_" target="_blank" rel="noopener"><i class="fas fa-terminal"></i>AtCoder</a>
+    </div>
+  </div>
+</section>
+
+안녕하세요, 월광입니다.
 # 👋 Introductions
 - 온라인 상에서 대부분 이 닉네임으로 사용 중입니다. Moonlight_으로 활동 중입니다. (혹은 다른 닉네임이였다 전환예정입니다)
 - 2026년 기준 KAIST에서 전산학과/수학과 복수전공을 하고 있습니다. 
@@ -37,54 +59,65 @@ PS를 꽤나 오래했고, 즐깁니다. 주로 수학/정수론 태그를 파�
 
 [![Solved.ac프로필](https://mazassumnida.wtf/api/v2/generate_badge?boj=davidkim0)](https://solved.ac/davidkim0)
 
-<div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
-<table style="width: 100%; min-width: 680px;">
-  <thead>
-    <tr>
-        <th style="text-align: center;"><strong>플랫폼</strong></th>
-        <th style="text-align: center;"><strong>티어 / 레이팅</strong></th>
-        <th style="text-align: center;"><strong>비고</strong></th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-      <td><strong><a href="https://solved.ac/davidkim0" target="_blank" rel="noopener">Baekjoon</a></strong></td>
-      <td><strong><span id="baekjoon-tier">—</span></strong> • <span id="baekjoon-rating">—</span> • <span id="baekjoon-solved">—</span> Solved</td>
-      <td>2024/2025 KSAAC 검수·출제</td>
-    </tr>
-    <tr>
-      <td><strong><a href="https://codeforces.com/profile/MoonlightWarrior" target="_blank" rel="noopener">Codeforces</a></strong></td>
-      <td><strong><span id="codeforces-tier" style="text-transform: capitalize;">—</span></strong> • <span id="codeforces-rating">—</span></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><strong><a href="https://atcoder.jp/users/Moonlight_" target="_blank" rel="noopener">AtCoder</a></strong></td>
-      <td><strong><span id="atcoder-tier">—</span></strong> • <span id="atcoder-rating">—</span> </td>
-      <td></td>
-    </tr>
-</tbody>
-</table>
+<div class="cv-stats">
+  <a class="cv-stat-card" href="https://solved.ac/davidkim0" target="_blank" rel="noopener">
+    <div class="cv-stat-platform"><i class="fas fa-square-root-variable"></i>Baekjoon</div>
+    <div class="cv-stat-tier" id="baekjoon-tier">—</div>
+    <div class="cv-stat-meta">Rating <span id="baekjoon-rating">—</span> · <span id="baekjoon-solved">—</span> Solved</div>
+    <div class="cv-stat-note"><i class="fas fa-pen-ruler"></i>2024/2025 KSAAC 검수·출제</div>
+  </a>
+  <a class="cv-stat-card" href="https://codeforces.com/profile/MoonlightWarrior" target="_blank" rel="noopener">
+    <div class="cv-stat-platform"><i class="fas fa-chart-line"></i>Codeforces</div>
+    <div class="cv-stat-tier" id="codeforces-tier">—</div>
+    <div class="cv-stat-meta"><span id="codeforces-rating">—</span></div>
+  </a>
+  <a class="cv-stat-card" href="https://atcoder.jp/users/Moonlight_" target="_blank" rel="noopener">
+    <div class="cv-stat-platform"><i class="fas fa-terminal"></i>AtCoder</div>
+    <div class="cv-stat-tier" id="atcoder-tier">—</div>
+    <div class="cv-stat-meta"><span id="atcoder-rating">—</span></div>
+  </a>
 </div>
 
 <script src="{{ '/assets/js/about-stats.js' | relative_url }}" defer></script>
 
 # 🏆 Awards & Achievements
-## 2025
 
-| 대회 | 순위/등급 |
-|:---:|:---:|
-| 2025 Korea ICPC Regionals 예선 | 24th place |
-| 2025 Korea ICPC Regionals 본선 | 47th place |
-| 2025 대학수학경시대회 | <span class="gold-shine">Gold Medal</span> |
-
-## 2026
-진행 중 — 목표: UCPC, ICPC 등
+<div class="cv-timeline">
+  <div class="cv-tl-item">
+    <p class="cv-tl-year">2025</p>
+    <div class="cv-award">
+      <i class="fas fa-trophy"></i>
+      <span class="cv-award-name">2025 Korea ICPC Regionals 예선</span>
+      <span class="cv-award-result">24th place</span>
+    </div>
+    <div class="cv-award">
+      <i class="fas fa-trophy"></i>
+      <span class="cv-award-name">2025 Korea ICPC Regionals 본선</span>
+      <span class="cv-award-result">47th place</span>
+    </div>
+    <div class="cv-award">
+      <i class="fas fa-medal"></i>
+      <span class="cv-award-name">2025 대학수학경시대회</span>
+      <span class="cv-award-result gold-shine">Gold Medal</span>
+    </div>
+  </div>
+  <div class="cv-tl-item">
+    <p class="cv-tl-year">2026</p>
+    <div class="cv-award cv-award-ongoing">
+      <i class="fas fa-hourglass-half"></i>
+      <span class="cv-award-name">진행 중 — 목표: UCPC, ICPC 등</span>
+    </div>
+  </div>
+</div>
 
 # 💻 Projects / Development & Experience
 
 현재 진행 중인 프로젝트는 없습니다. 새로운 작업이 생기면 이곳에 정리할 예정입니다.
 
 ## ✉️ Contact
-- **E-mail** : david.dabisu@gmail.com
-- **Blog**   : <https://moonlightwarrior.github.io/>  
-- **GitHub** : [@moonlightwarrior](https://github.com/moonlightwarrior)
+
+<div class="cv-links cv-contact">
+  <a class="cv-btn" href="mailto:david.dabisu@gmail.com"><i class="fas fa-envelope"></i>david.dabisu@gmail.com</a>
+  <a class="cv-btn" href="https://moonlightwarrior.github.io/"><i class="fas fa-rss"></i>moonlightwarrior.github.io</a>
+  <a class="cv-btn" href="https://github.com/moonlightwarrior" target="_blank" rel="noopener"><i class="fab fa-github"></i>@moonlightwarrior</a>
+</div>

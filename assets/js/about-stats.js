@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Last-known snapshots (update occasionally).
   const FALLBACK = {
-    cf: { tier: 'Expert', color: '#0000ff', rating: '1688 (max) / 1688 (now)' },
+    cf: { tier: 'Expert', color: '#3b5bff', rating: '1688 (max) / 1688 (now)' },
     ac: { tier: 'Gray',   color: '#808080', rating: '223 (max) / 223 (now)' }
   };
 
@@ -47,17 +47,19 @@ document.addEventListener('DOMContentLoaded', function () {
     21: 'Diamond V', 22: 'Diamond IV', 23: 'Diamond III', 24: 'Diamond II', 25: 'Diamond I',
     26: 'Ruby V', 27: 'Ruby IV', 28: 'Ruby III', 29: 'Ruby II', 30: 'Ruby I'
   };
+  // Platform tier colors, with the darkest ones lifted slightly so they stay
+  // readable on the dark theme too.
   const codeforcesColors = {
-    'newbie': '#808080', 'pupil': '#008000', 'specialist': '#03a89e', 'expert': '#0000ff',
+    'newbie': '#808080', 'pupil': '#1faf1f', 'specialist': '#03a89e', 'expert': '#3b5bff',
     'candidate master': '#aa00aa', 'master': '#ff8c00', 'international master': '#ff8c00',
     'grandmaster': '#ff0000', 'international grandmaster': '#ff0000', 'legendary grandmaster': '#ff0000'
   };
   function atcoderTier(rating) {
     if (rating < 400) return { tier: 'Gray', color: '#808080' };
-    if (rating < 800) return { tier: 'Brown', color: '#804000' };
-    if (rating < 1200) return { tier: 'Green', color: '#008000' };
+    if (rating < 800) return { tier: 'Brown', color: '#9a6030' };
+    if (rating < 1200) return { tier: 'Green', color: '#1faf1f' };
     if (rating < 1600) return { tier: 'Cyan', color: '#00C0C0' };
-    if (rating < 2000) return { tier: 'Blue', color: '#0000FF' };
+    if (rating < 2000) return { tier: 'Blue', color: '#3b5bff' };
     if (rating < 2400) return { tier: 'Yellow', color: '#C0C000' };
     if (rating < 2800) return { tier: 'Orange', color: '#FF8000' };
     return { tier: 'Red', color: '#FF0000' };

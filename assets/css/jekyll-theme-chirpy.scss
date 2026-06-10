@@ -1,0 +1,193 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* ====================================================================
+   "Moonlight" custom layer
+   An indigo → violet accent palette layered on top of Chirpy, defined
+   for both color modes with the same mode-switching pattern the theme
+   uses. The --ml-* custom properties are also consumed by
+   assets/css/about.css.
+   ==================================================================== */
+
+@mixin ml-light {
+  --ml-accent: #4f46e5;
+  --ml-accent-2: #8b5cf6;
+  --ml-accent-rgb: 79, 70, 229;
+  --ml-gradient: linear-gradient(120deg, #4f46e5, #8b5cf6);
+  --ml-on-accent: #ffffff;
+  --ml-sidebar-bg: linear-gradient(180deg, #f7f8fd 0%, #eef0fa 100%);
+  --ml-nav-active-bg: rgba(79, 70, 229, 0.1);
+  --ml-hero-bg: linear-gradient(135deg, #eceeff 0%, #f6edff 100%);
+  --ml-card-border: rgba(79, 70, 229, 0.14);
+
+  /* retint a few theme variables */
+  --link-color: #4f46e5;
+  --toc-highlight: #4f46e5;
+  --checkbox-checked-color: #4f46e5;
+  --input-focus-border-color: #a5b4fc;
+}
+
+@mixin ml-dark {
+  --ml-accent: #a5b4fc;
+  --ml-accent-2: #c4b5fd;
+  --ml-accent-rgb: 165, 180, 252;
+  --ml-gradient: linear-gradient(120deg, #a5b4fc, #c4b5fd);
+  --ml-on-accent: #1d1d30;
+  --ml-sidebar-bg: linear-gradient(180deg, #1a1b26 0%, #17171f 100%);
+  --ml-nav-active-bg: rgba(165, 180, 252, 0.12);
+  --ml-hero-bg: linear-gradient(135deg, #1e2133 0%, #281f3a 100%);
+  --ml-card-border: rgba(165, 180, 252, 0.18);
+
+  --link-color: #a5b4fc;
+  --toc-highlight: #a5b4fc;
+  --checkbox-checked-color: #a5b4fc;
+  --input-focus-border-color: #6366f1;
+}
+
+@media (prefers-color-scheme: light) {
+  html:not([data-mode]),
+  html[data-mode='light'] {
+    @include ml-light;
+  }
+
+  html[data-mode='dark'] {
+    @include ml-dark;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode]),
+  html[data-mode='dark'] {
+    @include ml-dark;
+  }
+
+  html[data-mode='light'] {
+    @include ml-light;
+  }
+}
+
+/* ---------- global touches ---------- */
+
+::selection {
+  background: rgba(var(--ml-accent-rgb), 0.28);
+}
+
+/* ---------- sidebar ---------- */
+
+#sidebar {
+  background: var(--ml-sidebar-bg);
+
+  /* `.site-title` is itself the <a> in Chirpy's sidebar markup */
+  a.site-title {
+    background: var(--ml-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    &:hover {
+      filter: brightness(1.18);
+    }
+  }
+
+  #avatar {
+    box-shadow: 0 0 0 3px rgba(var(--ml-accent-rgb), 0.55),
+      0 6px 18px rgba(var(--ml-accent-rgb), 0.28);
+  }
+
+  ul li.nav-item {
+    .nav-link:hover i {
+      color: var(--ml-accent);
+      opacity: 1;
+    }
+
+    &.active .nav-link {
+      background-color: var(--ml-nav-active-bg);
+
+      i {
+        color: var(--ml-accent);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/* ---------- home: post cards ---------- */
+
+#post-list {
+  .card-wrapper {
+    transition: transform 0.25s ease;
+
+    .post-preview {
+      transition: box-shadow 0.25s ease;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+
+      .post-preview {
+        box-shadow: 0 10px 28px rgba(var(--ml-accent-rgb), 0.18),
+          0 0 0 1px var(--ml-card-border);
+
+        &::before {
+          opacity: 0;
+        }
+      }
+
+      .card-title {
+        color: var(--ml-accent) !important;
+      }
+    }
+  }
+}
+
+/* ---------- titles & headings ---------- */
+
+article header h1[data-toc-skip],
+h1.dynamic-title {
+  background: var(--ml-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  width: fit-content;
+}
+
+/* short gradient bar under section headings in post/page bodies */
+main article .content {
+  h1,
+  h2 {
+    &::after {
+      content: '';
+      display: block;
+      width: 3.25rem;
+      height: 0.2rem;
+      margin-top: 0.4rem;
+      border-radius: 1rem;
+      background: var(--ml-gradient);
+      opacity: 0.85;
+    }
+  }
+}
+
+/* ---------- content polish ---------- */
+
+.content blockquote:not([class*='prompt-']) {
+  border-left-color: rgba(var(--ml-accent-rgb), 0.55);
+}
+
+.table-wrapper > table thead th {
+  border-bottom: 2px solid rgba(var(--ml-accent-rgb), 0.35);
+}
+
+.post-tag:hover {
+  border-color: var(--ml-accent);
+  color: var(--ml-accent);
+}
