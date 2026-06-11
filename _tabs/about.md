@@ -21,6 +21,7 @@ toc: true
     </div>
     <div class="cv-links">
       <a class="cv-btn cv-btn-primary" href="https://github.com/moonlightwarrior" target="_blank" rel="noopener"><i class="fab fa-github"></i>GitHub</a>
+      <a class="cv-btn" href="https://moonlightwarrior.github.io/CVblog/" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i>Academic Page</a>
       <a class="cv-btn" href="mailto:david.dabisu@gmail.com"><i class="fas fa-envelope"></i>Email</a>
       <a class="cv-btn" href="https://solved.ac/davidkim0" target="_blank" rel="noopener"><i class="fas fa-square-root-variable"></i>solved.ac</a>
       <a class="cv-btn" href="https://codeforces.com/profile/MoonlightWarrior" target="_blank" rel="noopener"><i class="fas fa-chart-line"></i>Codeforces</a>

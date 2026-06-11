@@ -6,7 +6,11 @@
 - type: linkedin
   icon: 'fab fa-linkedin'
   url: 'https://www.linkedin.com/in/%EA%B0%95%EB%AF%BC-%EA%B9%80-71401431a/'
-  
+
+- type: academic
+  icon: "fas fa-graduation-cap"
+  url: "https://moonlightwarrior.github.io/CVblog/"
+
 - type: solved.ac
   icon: "fas fa-code"
   url: "https://solved.ac/profile/davidkim0"
