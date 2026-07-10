@@ -9,15 +9,15 @@
 <tbody><tr>
 {%- for sem in site.data.courses -%}
 <td>
-{%- if sem.courses == nil or sem.courses == empty -%}
-<div class="course-empty">TBD</div>
-{%- endif -%}
 {%- for c in sem.courses -%}
 <div class="{{ c.class }} tooltip-container" tabindex="0" aria-label="{{ c.code }} — {{ c.name }}">
 <span class="course-code">{{ c.code }}</span>
 <span class="tooltip-content"><strong>{{ c.name }}</strong></span>
 </div>
 {%- endfor -%}
+{%- if sem.tbd or sem.courses == nil or sem.courses == empty -%}
+<div class="course-empty">TBD</div>
+{%- endif -%}
 </td>
 {%- endfor -%}
 </tr></tbody>

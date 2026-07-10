@@ -2,6 +2,8 @@
 # Each semester is a column; each course becomes a colored box.
 # `class` controls the color: cs1-level .. cs5-level, mas1-level .. mas5-level,
 # or one of: breadth / science / business.
+# `tbd: true` appends a TBD placeholder under the listed courses (a semester with
+# no courses at all shows TBD on its own).
 - term: "Before 2025"
   courses:
     - { code: "CS10001",  name: "프로그래밍의 기초",   class: "cs1-level" }
@@ -52,4 +54,8 @@
     - { code: "MAS50055", name: "고급통계학",          class: "mas5-level" }
 
 - term: "2026 Autumn"
-  courses: []
+  tbd: true
+  courses:
+    - { code: "CS30300",  name: "운영체제 및 실험",     class: "cs3-level" }
+    - { code: "MAS40041", name: "르베그적분론",         class: "mas4-level" }
+    - { code: "MAS50050", name: "확률론",              class: "mas5-level" }
